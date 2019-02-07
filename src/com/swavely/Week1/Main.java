@@ -5,11 +5,12 @@ public class Main {
     public static void main(String[] args) {
 		Scanner userInput = new Scanner(System.in);
         Scanner Input = new Scanner(System.in);
+        Scanner Unput = new Scanner(System.in);
 	    String choice = "no";
         Map<String,Double> cities = new TreeMap<>();
 	    while (!choice .equals("END")) {
 			System.out.println("Enter the name of a city");
-			String city = userInput.nextLine();
+			String city = Unput.nextLine();
             System.out.println("What is the temp of the first day in " + city);
             double t1 = userInput.nextInt();
             System.out.println("What is the temp of the second day in " + city);
